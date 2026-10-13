@@ -1,0 +1,22 @@
+{
+  "name": "PGameRemake - Đế Chế GameVui",
+  "short_name": "Đế Chế Mod",
+  "description": "Game Đế Chế GameVui Remake & Mod Việt Hóa 100% Chơi Trực Tiếp Trên Web & Mobile",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0d1117",
+  "theme_color": "#161b22",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
