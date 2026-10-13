@@ -2359,7 +2359,7 @@ function buatBawah()
    bawah = attachMovie("bawah_mc","bawah_mc",dalamBawah);
    bawah._x = -250;
    bawah._y = 380;
-   bawah.atas = "Place a battalion (press, hold and drag buttons below to green box) after finished, click start.";
+   bawah.atas = "Bố trí quân đoàn (nhấn, giữ và kéo các biểu tượng xuống ô xanh). Sau khi xong, nhấn BẮT ĐẦU.";
    cekPosX = new Array();
    cekPosY = new Array();
    sudahIsi = new Array();
@@ -2451,7 +2451,7 @@ function klikMulai()
    }
    if(bisaMulai == true)
    {
-      bawah.atas = "Click surender if you want to surender.";
+      bawah.atas = "Nhấn nút ĐẦU HÀNG nếu bạn muốn rút lui dâng thành.";
       bawah.surender_btn._visible = true;
       bawah.random_btn._visible = false;
       bawah.start_btn._visible = false;
@@ -2681,22 +2681,22 @@ if(zjmlMusuh == undefined || isNaN(zjmlMusuh) || zjmlMusuh <= 0)
    zjmlMusuh = random(100) + 100;
 }
 trace(zjmlMusuh);
-xxday = "DAY " + day;
+xxday = "NGÀY " + day;
 if(tingkatSulit == 1)
 {
-   xxlevel = "EASY";
+   xxlevel = "DỄ";
 }
 else if(tingkatSulit == 2)
 {
-   xxlevel = "NORMAL";
+   xxlevel = "TRUNG BÌNH";
 }
 else if(tingkatSulit == 3)
 {
-   xxlevel = "HARD";
+   xxlevel = "KHÓ";
 }
 else if(tingkatSulit == 4)
 {
-   xxlevel = "IMPOSSIBLE";
+   xxlevel = "CỰC KHÓ";
 }
 bisaMulai = false;
 randLari = random(10);

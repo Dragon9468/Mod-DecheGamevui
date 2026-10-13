@@ -62,19 +62,19 @@ function cekData()
    }
    else if(ctingkatSulit == 1)
    {
-      vtingkatSulit = "Easy";
+      vtingkatSulit = "Dễ";
    }
    else if(ctingkatSulit == 2)
    {
-      vtingkatSulit = "Normal";
+      vtingkatSulit = "Trung bình";
    }
    else if(ctingkatSulit == 3)
    {
-      vtingkatSulit = "Hard";
+      vtingkatSulit = "Khó";
    }
    else if(ctingkatSulit == 4)
    {
-      vtingkatSulit = "Impossible";
+      vtingkatSulit = "Cực khó";
    }
    if(cxpilihKota == undefined)
    {
@@ -98,15 +98,15 @@ function cekData()
    }
    else if(cspeedGame == 1)
    {
-      vspeedGame = "SLOW";
+      vspeedGame = "CHẬM";
    }
    else if(cspeedGame == 2)
    {
-      vspeedGame = "NORMAL";
+      vspeedGame = "BÌNH THƯỜNG";
    }
    else if(cspeedGame == 3)
    {
-      vspeedGame = "FAST";
+      vspeedGame = "NHANH";
    }
 }
 function outData()
@@ -166,7 +166,7 @@ function klikData()
          msgBox_mc.ok_btn._visible = false;
          msgBox_mc.cancel_btn._visible = false;
          msgBox_mc.bar._visible = true;
-         msgBox_mc.bar.tipe = "Saving..";
+         msgBox_mc.bar.tipe = "Đang lưu..";
          namaData = msgBox_mc.dataName;
          simpanData(zindi);
       };
@@ -189,7 +189,7 @@ function klikData()
          msgBox_mc.ok_btn._visible = false;
          msgBox_mc.cancel_btn._visible = false;
          msgBox_mc.bar._visible = true;
-         msgBox_mc.bar.tipe = "Loading..";
+         msgBox_mc.bar.tipe = "Đang tải..";
          initBangun();
          simpanBangun();
          ygDiSave();

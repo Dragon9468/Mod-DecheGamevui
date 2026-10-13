@@ -266,19 +266,19 @@ function xcekInfo()
    }
    if(tingkatSulit == 1)
    {
-      map.list_mc.xlevel = "EASY";
+      map.list_mc.xlevel = "DỄ";
    }
    else if(tingkatSulit == 2)
    {
-      map.list_mc.xlevel = "NORMAL";
+      map.list_mc.xlevel = "TRUNG BÌNH";
    }
    else if(tingkatSulit == 3)
    {
-      map.list_mc.xlevel = "HARD";
+      map.list_mc.xlevel = "KHÓ";
    }
    else if(tingkatSulit == 4)
    {
-      map.list_mc.xlevel = "IMPOSSIBLE";
+      map.list_mc.xlevel = "CỰC KHÓ";
    }
    if(jenisKerajaan == 1)
    {
@@ -288,7 +288,7 @@ function xcekInfo()
    {
       map.list_mc.xkerajaan = "ARTAVERA";
    }
-   map.day = "DAY \n" + day;
+   map.day = "NGÀY \n" + day;
 }
 function awalSemua()
 {
@@ -636,7 +636,7 @@ function dayItung()
                         upgradeProperti[i][j][k] = 1;
                         peta["area" + k].gotoAndStop(1);
                         map["map" + j].xpeta_mc["area" + k].gotoAndStop(1);
-                        cekInfo(2000,"One residence house in " + namaKota[i] + " has been abandoned by residents because insufficient food. (TIPS: You can import foods by click ACTIONS BUTTON, and then click IMPORT BUTTON. Build more food buildings quickly)",2,i);
+                        cekInfo(2000,"Một ngôi nhà dân tại " + namaKota[i] + " đã bị bỏ hoang do thiếu hụt lương thực! (MẸO: Nhấn HÀNH ĐỘNG -> NHẬP KHẨU hoặc xây thêm ruộng lúa, ao tôm, trại bò ngay)",2,i);
                         cekAnim();
                         i = bykKota;
                         j = bykArea;
@@ -691,7 +691,7 @@ function dayItung()
                   }
                   soldierKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your troops in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Binh lính tại " + namaKota[i] + " đã đào ngũ do ngân khố không đủ tiền trả lương! (MẸO: Nhấn HÀNH ĐỘNG -> XUẤT KHẨU hoặc xây thêm mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && soldierKota[i] > 0)
@@ -706,7 +706,7 @@ function dayItung()
                   }
                   soldierKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your troops in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for soldiers places)",2,i);
+                  cekInfo(2000,"Binh lính tại " + namaKota[i] + " đã rời đi do không có đủ nhà dân để cư trú! (MẸO: Hãy xây dựng thêm nhà ở)",2,i);
                }
             }
             if(moneyKota[i] < 0 && horseKota[i] > 0)
@@ -721,7 +721,7 @@ function dayItung()
                   }
                   horseKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your knights in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Kỵ binh tại " + namaKota[i] + " đã đào ngũ do không có tiền trả lương! (MẸO: Xuất khẩu hàng hóa hoặc xây mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && horseKota[i] > 0)
@@ -736,7 +736,7 @@ function dayItung()
                   }
                   horseKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your knights in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for horses places)",2,i);
+                  cekInfo(2000,"Kỵ binh tại " + namaKota[i] + " đã rời đi do không đủ nhà ở! (MẸO: Xây thêm nhà ở)",2,i);
                }
             }
             if(moneyKota[i] < 0 && catapultKota[i] > 0)
@@ -751,7 +751,7 @@ function dayItung()
                   }
                   catapultKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your catapult troops in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Lính máy bắn đá tại " + namaKota[i] + " đã rời đi do không đủ tiền trả lương! (MẸO: Xuất khẩu hàng hóa hoặc xây mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && catapultKota[i] > 0)
@@ -766,7 +766,7 @@ function dayItung()
                   }
                   catapultKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your catapult troops in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for catapults places)",2,i);
+                  cekInfo(2000,"Lính máy bắn đá tại " + namaKota[i] + " đã rời đi do thiếu nhà ở! (MẸO: Xây thêm nhà ở)",2,i);
                }
             }
             if(moneyKota[i] < 0 && witchKota[i] > 0)
@@ -781,7 +781,7 @@ function dayItung()
                   }
                   witchKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your witches in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Phù thủy tại " + namaKota[i] + " đã rời đi do không có tiền chi trả lương bổng! (MẸO: Xuất khẩu hàng hóa hoặc xây mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && witchKota[i] > 0)
@@ -796,7 +796,7 @@ function dayItung()
                   }
                   witchKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your witches in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for witches places)",2,i);
+                  cekInfo(2000,"Phù thủy tại " + namaKota[i] + " đã rời đi do không đủ nhà ở! (MẸO: Xây thêm nhà ở)",2,i);
                }
             }
             if(moneyKota[i] < 0 && elephantKota[i] > 0)
@@ -811,7 +811,7 @@ function dayItung()
                   }
                   elephantKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your elephant troops in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Quân lính voi tại " + namaKota[i] + " đã rời đi do không đủ tiền trả lương! (MẸO: Xuất khẩu hàng hóa hoặc xây mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && elephantKota[i] > 0)
@@ -826,7 +826,7 @@ function dayItung()
                   }
                   elephantKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your elephant troops in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for elephants places)",2,i);
+                  cekInfo(2000,"Quân lính voi tại " + namaKota[i] + " đã rời đi do thiếu nhà ở! (MẸO: Xây thêm nhà ở)",2,i);
                }
             }
             if(moneyKota[i] < 0 && xsuperKota[i] > 0)
@@ -841,7 +841,7 @@ function dayItung()
                   }
                   xsuperKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your super soldiers in " + namaKota[i] + " have left barracks because there is no money to pay your workers wages. (TIPS: You can export goods to make enough money by click ACTIONS BUTTON, and then click EXPORT BUTTON or build more gold mine or market buildings)",2,i);
+                  cekInfo(2000,"Siêu chiến binh tại " + namaKota[i] + " đã giải tán do không có tiền chi trả lương! (MẸO: Xuất khẩu hàng hóa hoặc xây mỏ vàng, chợ)",2,i);
                }
             }
             else if(workerKota[i] < 0 && xsuperKota[i] > 0)
@@ -856,7 +856,7 @@ function dayItung()
                   }
                   xsuperKota[i] -= kurangSoldier;
                   workerKota[i] += kurangSoldier;
-                  cekInfo(2000,"Your super soldiers in " + namaKota[i] + " have left barracks because there is not enough residence house. (TIPS: Build houses as many as possible for super soldiers places)",2,i);
+                  cekInfo(2000,"Siêu chiến binh tại " + namaKota[i] + " đã rời đi do không đủ nhà ở! (MẸO: Xây thêm nhà ở)",2,i);
                }
             }
             i++;
@@ -881,117 +881,117 @@ function dayItung()
                         {
                            if(a == 9)
                            {
-                              yangHilang = "barracks";
+                              yangHilang = "doanh trại lính";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 25)
                            {
-                              yangHilang = "super soldier battacks";
+                              yangHilang = "trại lính siêu cấp";
                               workerKota[i] += 30 * upgradeProperti[i][j][k];
                            }
                            else if(a == 23)
                            {
-                              yangHilang = "fire arrow blacksmith";
+                              yangHilang = "lò rèn cung lửa";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 12)
                            {
-                              yangHilang = "spear blacksmith";
+                              yangHilang = "lò rèn giáo";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 8)
                            {
-                              yangHilang = "arrow blacksmith";
+                              yangHilang = "lò rèn cung";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 7)
                            {
-                              yangHilang = "sword blacksmith";
+                              yangHilang = "lò rèn kiếm";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 20)
                            {
-                              yangHilang = "catapult factory";
+                              yangHilang = "xưởng máy bắn đá";
                               workerKota[i] += 25 * upgradeProperti[i][j][k];
                            }
                            else if(a == 21)
                            {
-                              yangHilang = "witch house";
+                              yangHilang = "nhà phù thủy";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 14)
                            {
-                              yangHilang = "horse stable";
+                              yangHilang = "chuồng ngựa";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 17)
                            {
-                              yangHilang = "elephant stable";
+                              yangHilang = "chuồng voi";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 22)
                            {
-                              yangHilang = "steel mine";
+                              yangHilang = "mỏ thép";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 24)
                            {
-                              yangHilang = "jewel shop";
+                              yangHilang = "tiệm đá quý";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 13)
                            {
-                              yangHilang = "pearl pond";
+                              yangHilang = "hồ ngọc trai";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 19)
                            {
-                              yangHilang = "oil refinery";
+                              yangHilang = "nhà máy lọc dầu";
                               workerKota[i] += 15 * upgradeProperti[i][j][k];
                            }
                            else if(a == 18)
                            {
-                              yangHilang = "coal mine";
+                              yangHilang = "mỏ than";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 11)
                            {
-                              yangHilang = "gold mine";
+                              yangHilang = "mỏ vàng";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 6)
                            {
-                              yangHilang = "iron mine";
+                              yangHilang = "mỏ sắt";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 5)
                            {
-                              yangHilang = "carpenter house";
+                              yangHilang = "xưởng gỗ";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 15)
                            {
-                              yangHilang = "cow farm";
+                              yangHilang = "trại bò";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 16)
                            {
-                              yangHilang = "shrimp pond";
+                              yangHilang = "ao tôm";
                               workerKota[i] += 15 * upgradeProperti[i][j][k];
                            }
                            else if(a == 4)
                            {
-                              yangHilang = "market";
+                              yangHilang = "chợ";
                               workerKota[i] += 20 * upgradeProperti[i][j][k];
                            }
                            else if(a == 3)
                            {
-                              yangHilang = "farm";
+                              yangHilang = "ruộng lúa";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 10)
                            {
-                              yangHilang = "fish pond";
+                              yangHilang = "hồ cá";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            adaIlang = true;
@@ -1004,7 +1004,7 @@ function dayItung()
                               jenisBangunan[i][j][k] = 1;
                               peta["area" + k].gotoAndStop(1);
                               map["map" + j].xpeta_mc["area" + k].gotoAndStop(1);
-                              cekInfo(2000,"One " + yangHilang + " in " + namaKota[i] + " was abandoned by residents because there is not enough residence house. (TIPS: Don\'t let your houses abandoned, always check your remain worker)",2,i);
+                              cekInfo(2000,"Một " + yangHilang + " tại " + namaKota[i] + " đã bị bỏ hoang do không đủ nhà ở cho thợ! (MẸO: Đừng để nhà ở thiếu hụt, luôn kiểm tra dân số tự do)",2,i);
                               cekAnim();
                               i = bykKota;
                               j = bykArea;
@@ -1021,117 +1021,117 @@ function dayItung()
                         {
                            if(a == 9)
                            {
-                              yangHilang = "barracks";
+                              yangHilang = "doanh trại lính";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 25)
                            {
-                              yangHilang = "super soldier battacks";
+                              yangHilang = "trại lính siêu cấp";
                               workerKota[i] += 30 * upgradeProperti[i][j][k];
                            }
                            else if(a == 23)
                            {
-                              yangHilang = "fire arrow blacksmith";
+                              yangHilang = "lò rèn cung lửa";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 12)
                            {
-                              yangHilang = "spear blacksmith";
+                              yangHilang = "lò rèn giáo";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 8)
                            {
-                              yangHilang = "arrow blacksmith";
+                              yangHilang = "lò rèn cung";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 7)
                            {
-                              yangHilang = "sword blacksmith";
+                              yangHilang = "lò rèn kiếm";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 20)
                            {
-                              yangHilang = "catapult factory";
+                              yangHilang = "xưởng máy bắn đá";
                               workerKota[i] += 25 * upgradeProperti[i][j][k];
                            }
                            else if(a == 21)
                            {
-                              yangHilang = "witch house";
+                              yangHilang = "nhà phù thủy";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 14)
                            {
-                              yangHilang = "horse stable";
+                              yangHilang = "chuồng ngựa";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 17)
                            {
-                              yangHilang = "elephant stable";
+                              yangHilang = "chuồng voi";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 22)
                            {
-                              yangHilang = "steel mine";
+                              yangHilang = "mỏ thép";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 24)
                            {
-                              yangHilang = "jewel shop";
+                              yangHilang = "tiệm đá quý";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 13)
                            {
-                              yangHilang = "pearl pond";
+                              yangHilang = "hồ ngọc trai";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 19)
                            {
-                              yangHilang = "oil refinery";
+                              yangHilang = "nhà máy lọc dầu";
                               workerKota[i] += 15 * upgradeProperti[i][j][k];
                            }
                            else if(a == 18)
                            {
-                              yangHilang = "coal mine";
+                              yangHilang = "mỏ than";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 11)
                            {
-                              yangHilang = "gold mine";
+                              yangHilang = "mỏ vàng";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 6)
                            {
-                              yangHilang = "iron mine";
+                              yangHilang = "mỏ sắt";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 5)
                            {
-                              yangHilang = "carpenter house";
+                              yangHilang = "xưởng gỗ";
                               workerKota[i] += 5 * upgradeProperti[i][j][k];
                            }
                            else if(a == 15)
                            {
-                              yangHilang = "cow farm";
+                              yangHilang = "trại bò";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 16)
                            {
-                              yangHilang = "shrimp pond";
+                              yangHilang = "ao tôm";
                               workerKota[i] += 15 * upgradeProperti[i][j][k];
                            }
                            else if(a == 4)
                            {
-                              yangHilang = "market";
+                              yangHilang = "chợ";
                               workerKota[i] += 20 * upgradeProperti[i][j][k];
                            }
                            else if(a == 3)
                            {
-                              yangHilang = "farm";
+                              yangHilang = "ruộng lúa";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            else if(a == 10)
                            {
-                              yangHilang = "fish pond";
+                              yangHilang = "hồ cá";
                               workerKota[i] += 10 * upgradeProperti[i][j][k];
                            }
                            adaIlang = true;
@@ -1144,7 +1144,7 @@ function dayItung()
                               jenisBangunan[i][j][k] = 1;
                               peta["area" + k].gotoAndStop(1);
                               map["map" + j].xpeta_mc["area" + k].gotoAndStop(1);
-                              cekInfo(2000,"One " + yangHilang + " in " + namaKota[i] + " has been sold because there is no money to pay your workers wages. (TIPS: You can export goods to make money by clicking ACTIONS BUTTON, and then click EXPORT BUTTON or build more market buildings or gold mine)",2,i);
+                              cekInfo(2000,"Một " + yangHilang + " tại " + namaKota[i] + " đã bị bán tháo do không đủ tiền trả công cho thợ! (MẸO: Xuất khẩu hàng hóa hoặc xây thêm mỏ vàng, chợ)",2,i);
                               cekAnim();
                               i = bykKota;
                               j = bykArea;
@@ -1381,7 +1381,7 @@ function dayItung()
                yangDiserang = adaSerang[rand];
                if(punyaWilayah[yangDiserang] == jenisKerajaan)
                {
-                  cekInfo(2000,"Barbarian soldiers have attacked your city, " + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang]);
+                  cekInfo(2000,"Quân Man Tộc đã tấn công thành phố " + namaKota[yangDiserang] + " của bạn từ " + namaKota[yangMenyerang] + "!");
                   xrand1 = random(2) + 1;
                   xrand2 = random(2) + 1;
                   xrand3 = random(2) + 1;
@@ -1422,12 +1422,12 @@ function dayItung()
                   }
                   if(wrand >= 70)
                   {
-                     cekInfo(2000,"Barbarian soldiers have attacked " + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang] + " and success to occupied " + namaKota[yangDiserang] + " city");
+                     cekInfo(2000,"Quân Man Tộc đã tấn công " + namaKota[yangDiserang] + " từ " + namaKota[yangMenyerang] + " và đã chiếm đóng thành công thành phố!");
                      punyaWilayah[yangDiserang] = 0;
                   }
                   else
                   {
-                     cekInfo(2000,"Barbarian soldiers have attacked" + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang] + " but unsuccess to occupied " + namaKota[yangDiserang] + " city");
+                     cekInfo(2000,"Quân Man Tộc đã tấn công " + namaKota[yangDiserang] + " từ " + namaKota[yangMenyerang] + " nhưng đã bị đẩy lùi thất bại!");
                   }
                }
             }
@@ -1506,7 +1506,7 @@ function dayItung()
                yangDiserang = adaSerang[rand];
                if(punyaWilayah[yangDiserang] == jenisKerajaan)
                {
-                  cekInfo(2000,namaEmpire[jenisMusuh] + " soldiers have attacked your city, " + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang]);
+                  cekInfo(2000,"Quân đội " + namaEmpire[jenisMusuh] + " đã tấn công thành phố " + namaKota[yangDiserang] + " của bạn từ " + namaKota[yangMenyerang] + "!");
                   xrand1 = random(2) + 1;
                   xrand2 = random(2) + 1;
                   xrand3 = random(2) + 1;
@@ -1547,7 +1547,7 @@ function dayItung()
                   }
                   if(wrand >= 20)
                   {
-                     cekInfo(2000,namaEmpire[jenisMusuh] + " soldiers have attacked " + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang] + " and success to occupied " + namaKota[yangDiserang] + " city");
+                     cekInfo(2000,"Quân đội " + namaEmpire[jenisMusuh] + " đã tấn công " + namaKota[yangDiserang] + " từ " + namaKota[yangMenyerang] + " và chiếm đóng thành phố thành công!");
                      punyaWilayah[yangDiserang] = jenisMusuh;
                      if(jenisMusuh == 1)
                      {
@@ -1560,7 +1560,7 @@ function dayItung()
                   }
                   else
                   {
-                     cekInfo(2000,namaEmpire[jenisMusuh] + " soldiers have attacked " + namaKota[yangDiserang] + " from " + namaKota[yangMenyerang] + " but unsuccess to occupied " + namaKota[yangDiserang] + " city");
+                     cekInfo(2000,"Quân đội " + namaEmpire[jenisMusuh] + " đã tấn công " + namaKota[yangDiserang] + " từ " + namaKota[yangMenyerang] + " nhưng đã bị đẩy lùi thất bại!");
                   }
                }
             }
@@ -1666,7 +1666,7 @@ function cekDiserang(aindi)
    map.list_mc.xarrow = xarrowKota[xi];
    map.list_mc.soldier = soldierKota[xi];
    map.list_mc.worker = workerKota[xi];
-   map.day = "DAY \n" + day;
+   map.day = "NGÀY \n" + day;
    bisaTombol2(false);
    bisaTombol(false);
    xpause = true;
@@ -1674,7 +1674,7 @@ function cekDiserang(aindi)
    actions.gotoAndStop(8);
    actions._x = 340;
    actions._y = 240;
-   actions.isi = "Your city, " + namaKota[yangDiserang] + " is under attacking by " + aindi + ", what action will you choose? DEFENSE: War against enemy. BRIBE: Give enemy some goods. RETREAT: Retreat to another own city. SURENDER: Abandond city without resistance.";
+   actions.isi = "Thành phố " + namaKota[yangDiserang] + " đang bị " + aindi + " tấn công! Bạn chọn phương án nào?\nPHÒNG THỦ: Nghênh chiến chống giặc.\nHỐI LỘ: Cống nạp của cải cầu hòa.\nRÚT LUI: Rút quân về thành lân cận.\nĐẦU HÀNG: Bỏ thành không kháng cự.";
    tipeWar = "bertahan";
    actions.defense_btn.onRelease = function()
    {
@@ -1697,7 +1697,7 @@ function cekDiserang(aindi)
       }
       if(bisaWar == false)
       {
-         actions.isi = "There are no soldiers or weapons in your city, choose another actions: BRIBE: Give enemy some goods. RETREAT: Retreat to another own city. SURENDER: Abandond city without resistance.";
+         actions.isi = "Thành phố không có binh lính hoặc vũ khí để phòng thủ! Hãy chọn hành động khác:\nHỐI LỘ: Cống nạp của cải để địch rút lui.\nRÚT LUI: Rút về thành trì khác.\nĐẦU HÀNG: Nhường thành trì không giao chiến.";
       }
    };
    actions.bribe_btn.onRelease = function()
@@ -1769,7 +1769,7 @@ function cekDiserang(aindi)
       }
       else
       {
-         actions.isi = "Your enemies haven\'t accepted your gift, they want to attack your city";
+         actions.isi = "Kẻ địch khinh thường lễ vật và từ chối lời cầu hòa! Chúng quyết tâm công phá thành phố của bạn!";
       }
       actions.xbribe_btn.onRelease = function()
       {
@@ -1797,7 +1797,7 @@ function cekDiserang(aindi)
                i++;
             }
             actions.gotoAndStop(10);
-            actions.isi = "Your enemies have accepted your gift, they cancell to attack your city";
+            actions.isi = "Kẻ địch đã chấp nhận cống phẩm! Chúng đã rút quân và hủy bỏ cuộc tấn công!";
             actions.ok_btn.onRelease = function()
             {
                bisaTombol2(true);
@@ -1810,7 +1810,7 @@ function cekDiserang(aindi)
          else
          {
             backSalah();
-            actions.winfo = "Can\'t bribe, you don\'t have goods or money";
+            actions.winfo = "Không thể hối lộ, bạn không có đủ tiền hoặc của cải!";
          }
       };
       actions.back_btn.onRelease = function()
@@ -1867,12 +1867,12 @@ function akhirSemua()
       if(moneyKota[pilihKota] > zawalMoney)
       {
          map.list_mc.arrow1.gotoAndStop(1);
-         naikTurun[1] = "Increased " + String(moneyKota[pilihKota] - zawalMoney);
+         naikTurun[1] = "Tăng +" + String(moneyKota[pilihKota] - zawalMoney);
       }
       else if(moneyKota[pilihKota] < zawalMoney)
       {
          map.list_mc.arrow1.gotoAndStop(2);
-         naikTurun[1] = "Decreased " + String(zawalMoney - moneyKota[pilihKota]);
+         naikTurun[1] = "Giảm -" + String(zawalMoney - moneyKota[pilihKota]);
       }
       else
       {
@@ -1881,12 +1881,12 @@ function akhirSemua()
       if(foodKota[pilihKota] > zawalFood)
       {
          map.list_mc.arrow2.gotoAndStop(1);
-         naikTurun[2] = "Increased " + String(foodKota[pilihKota] - zawalFood);
+         naikTurun[2] = "Tăng +" + String(foodKota[pilihKota] - zawalFood);
       }
       else if(foodKota[pilihKota] < zawalFood)
       {
          map.list_mc.arrow2.gotoAndStop(2);
-         naikTurun[2] = "Decreased " + String(zawalFood - foodKota[pilihKota]);
+         naikTurun[2] = "Giảm -" + String(zawalFood - foodKota[pilihKota]);
       }
       else
       {
@@ -1895,12 +1895,12 @@ function akhirSemua()
       if(ironKota[pilihKota] > zawalIron)
       {
          map.list_mc.arrow3.gotoAndStop(1);
-         naikTurun[3] = "Increased " + String(ironKota[pilihKota] - zawalIron);
+         naikTurun[3] = "Tăng +" + String(ironKota[pilihKota] - zawalIron);
       }
       else if(ironKota[pilihKota] < zawalIron)
       {
          map.list_mc.arrow3.gotoAndStop(2);
-         naikTurun[3] = "Decreased " + String(zawalIron - ironKota[pilihKota]);
+         naikTurun[3] = "Giảm -" + String(zawalIron - ironKota[pilihKota]);
       }
       else
       {
@@ -1909,12 +1909,12 @@ function akhirSemua()
       if(woodKota[pilihKota] > zawalWood)
       {
          map.list_mc.arrow4.gotoAndStop(1);
-         naikTurun[4] = "Increased " + String(woodKota[pilihKota] - zawalWood);
+         naikTurun[4] = "Tăng +" + String(woodKota[pilihKota] - zawalWood);
       }
       else if(woodKota[pilihKota] < zawalWood)
       {
          map.list_mc.arrow4.gotoAndStop(2);
-         naikTurun[4] = "Decreased " + String(zawalWood - woodKota[pilihKota]);
+         naikTurun[4] = "Giảm -" + String(zawalWood - woodKota[pilihKota]);
       }
       else
       {
@@ -1923,12 +1923,12 @@ function akhirSemua()
       if(swordKota[pilihKota] > zawalSword)
       {
          map.list_mc.arrow5.gotoAndStop(1);
-         naikTurun[5] = "Increased " + String(swordKota[pilihKota] - zawalSword);
+         naikTurun[5] = "Tăng +" + String(swordKota[pilihKota] - zawalSword);
       }
       else if(swordKota[pilihKota] < zawalSword)
       {
          map.list_mc.arrow5.gotoAndStop(2);
-         naikTurun[5] = "Decreased " + String(zawalSword - swordKota[pilihKota]);
+         naikTurun[5] = "Giảm -" + String(zawalSword - swordKota[pilihKota]);
       }
       else
       {
@@ -1937,12 +1937,12 @@ function akhirSemua()
       if(xarrowKota[pilihKota] > zawalArrow)
       {
          map.list_mc.arrow6.gotoAndStop(1);
-         naikTurun[6] = "Increased " + String(xarrowKota[pilihKota] - zawalArrow);
+         naikTurun[6] = "Tăng +" + String(xarrowKota[pilihKota] - zawalArrow);
       }
       else if(xarrowKota[pilihKota] < zawalArrow)
       {
          map.list_mc.arrow6.gotoAndStop(2);
-         naikTurun[6] = "Decreased " + String(zawalArrow - xarrowKota[pilihKota]);
+         naikTurun[6] = "Giảm -" + String(zawalArrow - xarrowKota[pilihKota]);
       }
       else
       {
@@ -1951,12 +1951,12 @@ function akhirSemua()
       if(soldierKota[pilihKota] > zawalSoldier)
       {
          map.list_mc.arrow7.gotoAndStop(1);
-         naikTurun[7] = "Increased " + String(soldierKota[pilihKota] - zawalSoldier);
+         naikTurun[7] = "Tăng +" + String(soldierKota[pilihKota] - zawalSoldier);
       }
       else if(soldierKota[pilihKota] < zawalSoldier)
       {
          map.list_mc.arrow7.gotoAndStop(2);
-         naikTurun[7] = "Decreased " + String(zawalSoldier - soldierKota[pilihKota]);
+         naikTurun[7] = "Giảm -" + String(zawalSoldier - soldierKota[pilihKota]);
       }
       else
       {
@@ -1965,12 +1965,12 @@ function akhirSemua()
       if(workerKota[pilihKota] > zawalWorker)
       {
          map.list_mc.arrow8.gotoAndStop(1);
-         naikTurun[8] = "Increased " + String(workerKota[pilihKota] - zawalWorker);
+         naikTurun[8] = "Tăng +" + String(workerKota[pilihKota] - zawalWorker);
       }
       else if(workerKota[pilihKota] < zawalWorker)
       {
          map.list_mc.arrow8.gotoAndStop(2);
-         naikTurun[8] = "Decreased " + String(zawalWorker - workerKota[pilihKota]);
+         naikTurun[8] = "Giảm -" + String(zawalWorker - workerKota[pilihKota]);
       }
       else
       {
@@ -1982,12 +1982,12 @@ function akhirSemua()
       if(diamondKota[pilihKota] > zawalDiamond)
       {
          map.list_mc.arrow1.gotoAndStop(1);
-         naikTurun[1] = "Increased " + String(diamondKota[pilihKota] - zawalDiamond);
+         naikTurun[1] = "Tăng +" + String(diamondKota[pilihKota] - zawalDiamond);
       }
       else if(diamondKota[pilihKota] < zawalDiamond)
       {
          map.list_mc.arrow1.gotoAndStop(2);
-         naikTurun[1] = "Decreased " + String(zawalDiamond - diamondKota[pilihKota]);
+         naikTurun[1] = "Giảm -" + String(zawalDiamond - diamondKota[pilihKota]);
       }
       else
       {
@@ -1996,12 +1996,12 @@ function akhirSemua()
       if(coalKota[pilihKota] > zawalCoal)
       {
          map.list_mc.arrow2.gotoAndStop(1);
-         naikTurun[2] = "Increased " + String(coalKota[pilihKota] - zawalCoal);
+         naikTurun[2] = "Tăng +" + String(coalKota[pilihKota] - zawalCoal);
       }
       else if(coalKota[pilihKota] < zawalCoal)
       {
          map.list_mc.arrow2.gotoAndStop(2);
-         naikTurun[2] = "Decreased " + String(zawalCoal - coalKota[pilihKota]);
+         naikTurun[2] = "Giảm -" + String(zawalCoal - coalKota[pilihKota]);
       }
       else
       {
@@ -2010,12 +2010,12 @@ function akhirSemua()
       if(oilKota[pilihKota] > zawalOil)
       {
          map.list_mc.arrow3.gotoAndStop(1);
-         naikTurun[3] = "Increased " + String(oilKota[pilihKota] - zawalOil);
+         naikTurun[3] = "Tăng +" + String(oilKota[pilihKota] - zawalOil);
       }
       else if(oilKota[pilihKota] < zawalOil)
       {
          map.list_mc.arrow3.gotoAndStop(2);
-         naikTurun[3] = "Decreased " + String(zawalOil - oilKota[pilihKota]);
+         naikTurun[3] = "Giảm -" + String(zawalOil - oilKota[pilihKota]);
       }
       else
       {
@@ -2024,12 +2024,12 @@ function akhirSemua()
       if(horseKota[pilihKota] > zawalHorse)
       {
          map.list_mc.arrow4.gotoAndStop(1);
-         naikTurun[4] = "Increased " + String(horseKota[pilihKota] - zawalHorse);
+         naikTurun[4] = "Tăng +" + String(horseKota[pilihKota] - zawalHorse);
       }
       else if(horseKota[pilihKota] < zawalHorse)
       {
          map.list_mc.arrow4.gotoAndStop(2);
-         naikTurun[4] = "Decreased " + String(zawalHorse - horseKota[pilihKota]);
+         naikTurun[4] = "Giảm -" + String(zawalHorse - horseKota[pilihKota]);
       }
       else
       {
@@ -2038,12 +2038,12 @@ function akhirSemua()
       if(spearKota[pilihKota] > zawalSpear)
       {
          map.list_mc.arrow5.gotoAndStop(1);
-         naikTurun[5] = "Increased " + String(spearKota[pilihKota] - zawalSpear);
+         naikTurun[5] = "Tăng +" + String(spearKota[pilihKota] - zawalSpear);
       }
       else if(spearKota[pilihKota] < zawalSpear)
       {
          map.list_mc.arrow5.gotoAndStop(2);
-         naikTurun[5] = "Decreased " + String(zawalSpear - spearKota[pilihKota]);
+         naikTurun[5] = "Giảm -" + String(zawalSpear - spearKota[pilihKota]);
       }
       else
       {
@@ -2052,12 +2052,12 @@ function akhirSemua()
       if(catapultKota[pilihKota] > zawalCatapult)
       {
          map.list_mc.arrow6.gotoAndStop(1);
-         naikTurun[6] = "Increased " + String(catapultKota[pilihKota] - zawalCatapult);
+         naikTurun[6] = "Tăng +" + String(catapultKota[pilihKota] - zawalCatapult);
       }
       else if(catapultKota[pilihKota] < zawalCatapult)
       {
          map.list_mc.arrow6.gotoAndStop(2);
-         naikTurun[6] = "Decreased " + String(zawalCatapult - catapultKota[pilihKota]);
+         naikTurun[6] = "Giảm -" + String(zawalCatapult - catapultKota[pilihKota]);
       }
       else
       {
@@ -2066,12 +2066,12 @@ function akhirSemua()
       if(witchKota[pilihKota] > zawalWitch)
       {
          map.list_mc.arrow7.gotoAndStop(1);
-         naikTurun[7] = "Increased " + String(witchKota[pilihKota] - zawalWitch);
+         naikTurun[7] = "Tăng +" + String(witchKota[pilihKota] - zawalWitch);
       }
       else if(witchKota[pilihKota] < zawalWitch)
       {
          map.list_mc.arrow7.gotoAndStop(2);
-         naikTurun[7] = "Decreased " + String(zawalWitch - witchKota[pilihKota]);
+         naikTurun[7] = "Giảm -" + String(zawalWitch - witchKota[pilihKota]);
       }
       else
       {
@@ -2080,12 +2080,12 @@ function akhirSemua()
       if(elephantKota[pilihKota] > zawalElephant)
       {
          map.list_mc.arrow8.gotoAndStop(1);
-         naikTurun[8] = "Increased " + String(elephantKota[pilihKota] - zawalElephant);
+         naikTurun[8] = "Tăng +" + String(elephantKota[pilihKota] - zawalElephant);
       }
       else if(elephantKota[pilihKota] < zawalElephant)
       {
          map.list_mc.arrow8.gotoAndStop(2);
-         naikTurun[8] = "Decreased " + String(zawalElephant - elephantKota[pilihKota]);
+         naikTurun[8] = "Giảm -" + String(zawalElephant - elephantKota[pilihKota]);
       }
       else
       {
@@ -2097,12 +2097,12 @@ function akhirSemua()
       if(fireKota[pilihKota] > zawalFire)
       {
          map.list_mc.arrow1.gotoAndStop(1);
-         naikTurun[1] = "Increased " + String(fireKota[pilihKota] - zawalFire);
+         naikTurun[1] = "Tăng +" + String(fireKota[pilihKota] - zawalFire);
       }
       else if(fireKota[pilihKota] < zawalFire)
       {
          map.list_mc.arrow1.gotoAndStop(2);
-         naikTurun[1] = "Decreased " + String(zawalFire - fireKota[pilihKota]);
+         naikTurun[1] = "Giảm -" + String(zawalFire - fireKota[pilihKota]);
       }
       else
       {
@@ -2111,12 +2111,12 @@ function akhirSemua()
       if(steelKota[pilihKota] > zawalSteel)
       {
          map.list_mc.arrow2.gotoAndStop(1);
-         naikTurun[2] = "Increased " + String(steelKota[pilihKota] - zawalSteel);
+         naikTurun[2] = "Tăng +" + String(steelKota[pilihKota] - zawalSteel);
       }
       else if(steelKota[pilihKota] < zawalSteel)
       {
          map.list_mc.arrow2.gotoAndStop(2);
-         naikTurun[2] = "Decreased " + String(zawalSteel - steelKota[pilihKota]);
+         naikTurun[2] = "Giảm -" + String(zawalSteel - steelKota[pilihKota]);
       }
       else
       {
@@ -2125,12 +2125,12 @@ function akhirSemua()
       if(xsuperKota[pilihKota] > zawalSuper)
       {
          map.list_mc.arrow3.gotoAndStop(1);
-         naikTurun[3] = "Increased " + String(xsuperKota[pilihKota] - zawalSuper);
+         naikTurun[3] = "Tăng +" + String(xsuperKota[pilihKota] - zawalSuper);
       }
       else if(xsuperKota[pilihKota] < zawalSuper)
       {
          map.list_mc.arrow3.gotoAndStop(2);
-         naikTurun[3] = "Decreased " + String(zawalSuper - xsuperKota[pilihKota]);
+         naikTurun[3] = "Giảm -" + String(zawalSuper - xsuperKota[pilihKota]);
       }
       else
       {
@@ -2139,12 +2139,12 @@ function akhirSemua()
       if(iceballKota[pilihKota] > zawalIceball)
       {
          map.list_mc.arrow4.gotoAndStop(1);
-         naikTurun[4] = "Increased " + String(iceballKota[pilihKota] - zawalIceball);
+         naikTurun[4] = "Tăng +" + String(iceballKota[pilihKota] - zawalIceball);
       }
       else if(iceballKota[pilihKota] < zawalIceball)
       {
          map.list_mc.arrow4.gotoAndStop(2);
-         naikTurun[4] = "Decreased " + String(zawalIceball - iceballKota[pilihKota]);
+         naikTurun[4] = "Giảm -" + String(zawalIceball - iceballKota[pilihKota]);
       }
       else
       {
@@ -2153,12 +2153,12 @@ function akhirSemua()
       if(fireballKota[pilihKota] > zawalFireball)
       {
          map.list_mc.arrow5.gotoAndStop(1);
-         naikTurun[5] = "Increased " + String(fireballKota[pilihKota] - zawalFireball);
+         naikTurun[5] = "Tăng +" + String(fireballKota[pilihKota] - zawalFireball);
       }
       else if(fireballKota[pilihKota] < zawalFireball)
       {
          map.list_mc.arrow5.gotoAndStop(2);
-         naikTurun[5] = "Decreased " + String(zawalFireball - fireballKota[pilihKota]);
+         naikTurun[5] = "Giảm -" + String(zawalFireball - fireballKota[pilihKota]);
       }
       else
       {
@@ -2167,12 +2167,12 @@ function akhirSemua()
       if(poisonKota[pilihKota] > zawalPoison)
       {
          map.list_mc.arrow6.gotoAndStop(1);
-         naikTurun[6] = "Increased " + String(poisonKota[pilihKota] - zawalPoison);
+         naikTurun[6] = "Tăng +" + String(poisonKota[pilihKota] - zawalPoison);
       }
       else if(poisonKota[pilihKota] < zawalPoison)
       {
          map.list_mc.arrow6.gotoAndStop(2);
-         naikTurun[6] = "Decreased " + String(zawalPoison - poisonKota[pilihKota]);
+         naikTurun[6] = "Giảm -" + String(zawalPoison - poisonKota[pilihKota]);
       }
       else
       {
@@ -2181,12 +2181,12 @@ function akhirSemua()
       if(hurricaneKota[pilihKota] > zawalHurricane)
       {
          map.list_mc.arrow7.gotoAndStop(1);
-         naikTurun[7] = "Increased " + String(hurricaneKota[pilihKota] - zawalHurricane);
+         naikTurun[7] = "Tăng +" + String(hurricaneKota[pilihKota] - zawalHurricane);
       }
       else if(hurricaneKota[pilihKota] < zawalHurricane)
       {
          map.list_mc.arrow7.gotoAndStop(2);
-         naikTurun[7] = "Decreased " + String(zawalHurricane - hurricaneKota[pilihKota]);
+         naikTurun[7] = "Giảm -" + String(zawalHurricane - hurricaneKota[pilihKota]);
       }
       else
       {
@@ -2195,12 +2195,12 @@ function akhirSemua()
       if(earthquakeKota[pilihKota] > zawalEarthquake)
       {
          map.list_mc.arrow8.gotoAndStop(1);
-         naikTurun[8] = "Increased " + String(earthquakeKota[pilihKota] - zawalEarthquake);
+         naikTurun[8] = "Tăng +" + String(earthquakeKota[pilihKota] - zawalEarthquake);
       }
       else if(earthquakeKota[pilihKota] < zawalEarthquake)
       {
          map.list_mc.arrow8.gotoAndStop(2);
-         naikTurun[8] = "Decreased " + String(zawalEarthquake - earthquakeKota[pilihKota]);
+         naikTurun[8] = "Giảm -" + String(zawalEarthquake - earthquakeKota[pilihKota]);
       }
       else
       {
@@ -2520,11 +2520,11 @@ function enterMsgBox()
                {
                   if(tingkatSulit == 3 || tingkatSulit == 4)
                   {
-                     this.isi = isiButton[pilihButton] + "\n\nPress here for upgrade or sell the building";
+                     this.isi = isiButton[pilihButton] + "\n\nNhấn vào đây để nâng cấp hoặc bán công trình";
                   }
                   else if(tingkatSulit == 1 || tingkatSulit == 2)
                   {
-                     this.isi = xisiButton[pilihButton] + "\n\nPress here for upgrade or sell the building";
+                     this.isi = xisiButton[pilihButton] + "\n\nNhấn vào đây để nâng cấp hoặc bán công trình";
                   }
                }
                else if(tingkatSulit == 3 || tingkatSulit == 4)
@@ -2598,7 +2598,7 @@ function enterMsgBox()
             if(_gVal == undefined) _gVal = 0;
             var _gSign = (_gVal >= 0 ? "+$" : "-$") + Math.abs(_gVal);
             this.judul = namaKota[pilihButton] + " [Trade GDP: " + _gSign + "]";
-            this.isi = "Daily Exports: $" + _root.exportGdpKota[pilihButton] + " | Imports: $" + _root.importGdpKota[pilihButton] + "\n(Click to travel | Press 'L' for Logistics routes)";
+            this.isi = "Xuất khẩu hàng ngày: $" + _root.exportGdpKota[pilihButton] + " | Nhập khẩu: $" + _root.importGdpKota[pilihButton] + "\n(Nhấp chuột để di chuyển tới | Nhấn phím 'L' để mở Mạng lưới Vận tải)";
             this.jml1 = Number(_root.soldierKota[pilihButton]);
             this.jml2 = Number(_root.horseKota[pilihButton]);
             this.jml3 = Number(_root.catapultKota[pilihButton]);
@@ -2723,7 +2723,7 @@ function cekInfo(wdelay, winfo, wkemana, wkota)
             map.list_mc.xarrow = xarrowKota[xi];
             map.list_mc.soldier = soldierKota[xi];
             map.list_mc.worker = workerKota[xi];
-            map.day = "DAY \n" + day;
+            map.day = "NGÀY \n" + day;
          };
          info.close_btn.onRelease = function()
          {
@@ -2796,7 +2796,7 @@ function cekInfo2(wdelay2, winfo2, wkemana, wkota)
          map.list_mc.xarrow = xarrowKota[xi];
          map.list_mc.soldier = soldierKota[xi];
          map.list_mc.worker = workerKota[xi];
-         map.day = "DAY \n" + day;
+         map.day = "NGÀY \n" + day;
       };
    }
 }
@@ -3057,7 +3057,7 @@ _root.openLogisticsManager = function()
       tFmt.bold = true;
       tFmt.color = 0xFFAA22;
       p.title_tf.setNewTextFormat(tFmt);
-      p.title_tf.text = "REGIONAL LOGISTICS & POPULATION NETWORK";
+      p.title_tf.text = "MẠNG LƯỚI VẬN TẢI & ĐIỀU ĐỘNG DÂN SỐ";
       
       // Close Button [X]
       p.createBtn("btn_close", 2, 560, 8, 28, 24, "X", 0x882222, 0xFF4444, function() {
@@ -3073,10 +3073,10 @@ _root.openLogisticsManager = function()
       cFmt.bold = true;
       cFmt.color = 0x88DDFF;
       p.city_info.setNewTextFormat(cFmt);
-      p.city_info.text = "Origin City: " + _root.namaKota[curC] + " (Workers: " + _root.workerKota[curC] + ")";
+      p.city_info.text = "Thành phố xuất phát: " + _root.namaKota[curC] + " (Dân tự do: " + _root.workerKota[curC] + ")";
       
       // Navigation buttons to cycle origin city
-      p.createBtn("btn_prev_city", 4, 380, 32, 95, 22, "< Prev City", 0x223355, 0x5588CC, function() {
+      p.createBtn("btn_prev_city", 4, 380, 32, 95, 22, "< Thành trước", 0x223355, 0x5588CC, function() {
          var prevC = _root.pilihKota - 1;
          if(prevC < 1) prevC = 12;
          while(_root.punyaWilayah[prevC] != _root.jenisKerajaan && prevC != _root.pilihKota) {
@@ -3087,7 +3087,7 @@ _root.openLogisticsManager = function()
          _root.xpilihKota = prevC;
          _root.renderLogisticsUI();
       });
-      p.createBtn("btn_next_city", 5, 485, 32, 95, 22, "Next City >", 0x223355, 0x5588CC, function() {
+      p.createBtn("btn_next_city", 5, 485, 32, 95, 22, "Thành sau >", 0x223355, 0x5588CC, function() {
          var nextC = _root.pilihKota + 1;
          if(nextC > 12) nextC = 1;
          while(_root.punyaWilayah[nextC] != _root.jenisKerajaan && nextC != _root.pilihKota) {
@@ -3106,11 +3106,11 @@ _root.openLogisticsManager = function()
       var tab2Bg = !isTab1 ? 0x2A4E7A : 0x182333;
       var tab2Border = !isTab1 ? 0x66AAFF : 0x334455;
       
-      p.createBtn("tab_goods", 6, 15, 60, 280, 26, "[1] COMMODITY LOGISTICS (1 Good/Region)", tab1Bg, tab1Border, function() {
+      p.createBtn("tab_goods", 6, 15, 60, 280, 26, "[1] VẬN TẢI HÀNG HÓA (1 Mặt hàng/Vùng)", tab1Bg, tab1Border, function() {
          _root.logisticsTab = 1;
          _root.renderLogisticsUI();
       });
-      p.createBtn("tab_workers", 7, 305, 60, 280, 26, "[2] WORKER / POPULATION MIGRATION", tab2Bg, tab2Border, function() {
+      p.createBtn("tab_workers", 7, 305, 60, 280, 26, "[2] DI DÂN / ĐIỀU ĐỘNG LAO ĐỘNG", tab2Bg, tab2Border, function() {
          _root.logisticsTab = 2;
          _root.renderLogisticsUI();
       });
@@ -3132,9 +3132,9 @@ _root.openLogisticsManager = function()
       {
          p.createTextField("sec1_tf", 8, 15, 96, 570, 20);
          p.sec1_tf.setNewTextFormat(sFmt);
-         p.sec1_tf.text = "CHOSEN EXPORT RESOURCE (1 commodity per region):";
+         p.sec1_tf.text = "MẶT HÀNG XUẤT CUNG ỨNG (Tối đa 1 mặt hàng mỗi vùng):";
          
-         var resNames = new Array("None", "Food", "Iron", "Wood", "Pearl", "Coal", "Oil", "Steel", "Money");
+         var resNames = new Array("Không", "Lương thực", "Sắt", "Gỗ", "Ngọc trai", "Than đá", "Dầu", "Thép", "Tiền vàng");
          var curRes = _root.logisticsResType[curC];
          if(curRes == undefined) curRes = 0;
          
@@ -3158,7 +3158,7 @@ _root.openLogisticsManager = function()
          
          p.createTextField("sec2_tf", 20, 15, 150, 570, 20);
          p.sec2_tf.setNewTextFormat(sFmt);
-         p.sec2_tf.text = "DESTINATION REGIONS (Daily automatic deliveries):";
+         p.sec2_tf.text = "CÁC VÙNG ĐÍCH TIẾP NHẬN (Tự động vận chuyển mỗi ngày):";
          
          var rowY = 172;
          var dIdx = 1;
@@ -3187,7 +3187,7 @@ _root.openLogisticsManager = function()
                aFmt.bold = true;
                aFmt.color = (sendAmt > 0 ? 0xFFEE44 : 0x888888);
                p["amt_lbl_" + dIdx].setNewTextFormat(aFmt);
-               p["amt_lbl_" + dIdx].text = sendAmt + " /day";
+               p["amt_lbl_" + dIdx].text = sendAmt + " /ngày";
                
                p.createBtn("btn_p10_" + dIdx, cDepth++, 305, rowY, 48, 20, "+10", 0x24334A, 0x486B98, function() {
                   var tId = Number(this._name.substr(8));
@@ -3207,7 +3207,7 @@ _root.openLogisticsManager = function()
                   _root.logisticsAmount[_root.pilihKota][tId] += 200;
                   _root.renderLogisticsUI();
                });
-               p.createBtn("btn_clr_" + dIdx, cDepth++, 480, rowY, 55, 20, "Clear", 0x4A2424, 0x984848, function() {
+               p.createBtn("btn_clr_" + dIdx, cDepth++, 480, rowY, 55, 20, "Xóa", 0x4A2424, 0x984848, function() {
                   var tId = Number(this._name.substr(8));
                   _root.logisticsAmount[_root.pilihKota][tId] = 0;
                   _root.renderLogisticsUI();
@@ -3226,7 +3226,7 @@ _root.openLogisticsManager = function()
             ntFmt.size = 12;
             ntFmt.color = 0xAAAAAA;
             p.no_target_tf.setNewTextFormat(ntFmt);
-            p.no_target_tf.text = "You do not own any other cities yet. Conquer neighboring territories to establish trade!";
+            p.no_target_tf.text = "Bạn chưa có thành phố trực thuộc nào khác. Hãy mở rộng lãnh thổ để thiết lập tuyến thương mại!";
          }
          
          p.lineStyle(1, 0x334466, 100);
@@ -3245,7 +3245,7 @@ _root.openLogisticsManager = function()
          sumFmt.size = 11;
          sumFmt.color = 0xDDDDDD;
          p.summary_tf.setNewTextFormat(sumFmt);
-         p.summary_tf.text = "DAILY TRADE: Sending " + totalDailySending + " " + resNames[curRes] + "/day | Export: $" + curExp + " | Import: $" + curImp + "\nNET REGIONAL TRADE GDP: " + (curGdpVal >= 0 ? "+$" : "-$") + Math.abs(curGdpVal) + " /day";
+         p.summary_tf.text = "THƯƠNG MẠI MỖI NGÀY: Chuyển " + totalDailySending + " " + resNames[curRes] + "/ngày | Xuất: $" + curExp + " | Nhập: $" + curImp + "\nTHẶNG DƯ GDP THƯƠNG MẠI: " + (curGdpVal >= 0 ? "+$" : "-$") + Math.abs(curGdpVal) + " /ngày";
       }
       // =====================================================================
       // TAB 2: WORKER / POPULATION MIGRATION
@@ -3254,7 +3254,7 @@ _root.openLogisticsManager = function()
       {
          p.createTextField("wsec_tf", 8, 15, 96, 570, 20);
          p.wsec_tf.setNewTextFormat(sFmt);
-         p.wsec_tf.text = "POPULATION MIGRATION (Independent from goods limit - reinforce frontline/low-land cities):";
+         p.wsec_tf.text = "ĐIỀU ĐỘNG DÂN CƯ (Không giới hạn tài nguyên - chi viện cho tiền tuyến và vùng ít đất):";
          
          var rowY = 122;
          var dIdx = 1;
@@ -3274,7 +3274,7 @@ _root.openLogisticsManager = function()
                dFmt.size = 11;
                dFmt.color = 0xFFFFFF;
                p["wdst_lbl_" + dIdx].setNewTextFormat(dFmt);
-               p["wdst_lbl_" + dIdx].text = dIdx + ". " + _root.namaKota[dIdx] + " (Workers: " + _root.workerKota[dIdx] + ")";
+               p["wdst_lbl_" + dIdx].text = dIdx + ". " + _root.namaKota[dIdx] + " (Dân số: " + _root.workerKota[dIdx] + ")";
                
                p.createTextField("wamt_lbl_" + dIdx, cDepth++, 205, rowY + 2, 100, 20);
                var aFmt = new TextFormat();
@@ -3283,7 +3283,7 @@ _root.openLogisticsManager = function()
                aFmt.bold = true;
                aFmt.color = (wAmt > 0 ? 0x55FF99 : 0x888888);
                p["wamt_lbl_" + dIdx].setNewTextFormat(aFmt);
-               p["wamt_lbl_" + dIdx].text = wAmt + " citizens/day";
+               p["wamt_lbl_" + dIdx].text = wAmt + " người/ngày";
                
                p.createBtn("btn_wp5_" + dIdx, cDepth++, 310, rowY, 40, 20, "+5", 0x1E3B2E, 0x367A5A, function() {
                   var tId = Number(this._name.substr(8));
@@ -3328,7 +3328,7 @@ _root.openLogisticsManager = function()
             ntFmt.size = 12;
             ntFmt.color = 0xAAAAAA;
             p.no_target_tf.setNewTextFormat(ntFmt);
-            p.no_target_tf.text = "You do not own any other cities yet. Conquer neighboring territories to migrate population!";
+            p.no_target_tf.text = "Bạn chưa có thành phố trực thuộc nào khác. Hãy mở rộng lãnh thổ để điều động di dân!";
          }
          
          p.lineStyle(1, 0x334466, 100);
@@ -3340,11 +3340,11 @@ _root.openLogisticsManager = function()
          sumFmt.size = 11;
          sumFmt.color = 0xDDDDDD;
          p.summary_tf.setNewTextFormat(sumFmt);
-         p.summary_tf.text = "DAILY MIGRATION: Sending " + totalWorkersMoving + " citizens/day from " + _root.namaKota[curC] + "\nCitizens can be recruited into troops or work in buildings in recipient cities.";
+         p.summary_tf.text = "DI DÂN MỖI NGÀY: Điều động " + totalWorkersMoving + " người/ngày từ " + _root.namaKota[curC] + "\nDân di cư đến nơi có thể nhập ngũ thành lính hoặc lao động trong các công trình.";
       }
       
       // Bottom DONE button
-      p.createBtn("btn_done", cDepth++, 490, 376, 90, 30, "DONE", 0x1E5B2E, 0x44AA55, function() {
+      p.createBtn("btn_done", cDepth++, 490, 376, 90, 30, "XONG", 0x1E5B2E, 0x44AA55, function() {
          _root.openLogisticsManager();
       });
    };
@@ -3573,7 +3573,7 @@ function klikNext()
             else
             {
                backSalah();
-               actions.winfo = "Can\'t brought, too many goods";
+               actions.winfo = "Không thể mang theo: vượt quá khối lượng chở hàng!";
             }
          };
          actions.back_btn.onRelease = function()
@@ -3597,17 +3597,17 @@ function klikNext()
    else if(bisaPasukan == 2)
    {
       backSalah();
-      actions.winfo = "Can\'t war, not enough soldier";
+      actions.winfo = "Không thể xuất trận: không có đủ binh lính!";
    }
    else if(bisaPasukan == 3)
    {
       backSalah();
-      actions.winfo = "Can\'t war, please put your soldiers to war";
+      actions.winfo = "Không thể xuất trận: hãy bố trí quân đội lên chiến trường!";
    }
    else if(bisaPasukan == 4)
    {
       backSalah();
-      actions.winfo = "Can\'t war, not enough weapon";
+      actions.winfo = "Không thể xuất trận: không có đủ vũ khí!";
    }
 }
 function klikWarMap()
@@ -5424,7 +5424,7 @@ function klikMove2()
       else
       {
          backSalah();
-         actions.winfo = "Can\'t move, too many goods";
+         actions.winfo = "Không thể di chuyển: vượt quá lượng hàng cho phép!";
       }
    };
    actions.back_btn.onRelease = function()
@@ -6289,7 +6289,7 @@ function klikExport()
       else
       {
          backSalah();
-         actions.info = "Can\'t Export, amount of export more than your supplies";
+         actions.info = "Không thể xuất khẩu: số lượng xuất vượt quá kho dự trữ!";
       }
    };
    actions.close_btn.onRelease = function()
@@ -6342,7 +6342,7 @@ function klikImport()
 {
    if(tingkatSulit == 4)
    {
-      cekInfo(2000,"Impossible difficulty: Foreign imports are completely prohibited!");
+      cekInfo(2000,"Độ khó Cực Khó: Nghiêm cấm hoàn toàn hoạt động nhập khẩu từ bên ngoài!");
       return;
    }
    actions.gotoAndStop(4);
@@ -6479,7 +6479,7 @@ function klikImport()
       else
       {
          backSalah();
-         actions.info = "Can\'t Import, you have not enough money";
+         actions.info = "Không thể nhập khẩu: bạn không có đủ tiền vàng!";
       }
    };
    actions.close_btn.onRelease = function()
@@ -7567,29 +7567,29 @@ function klikArea()
          if(kebutuhanMoney[xbangunan] > moneyKota[pilihKota])
          {
             bisaMoney = false;
-            tambahan1 = "Money ";
+            tambahan1 = "Tiền vàng ";
          }
          if(kebutuhanFood[xbangunan] > foodKota[pilihKota])
          {
             bisaFood = false;
-            tambahan2 = "Food ";
+            tambahan2 = "Lương thực ";
          }
          if(kebutuhanIron[xbangunan] > ironKota[pilihKota])
          {
             bisaIron = false;
-            tambahan3 = "Iron ";
+            tambahan3 = "Sắt ";
          }
          if(kebutuhanWood[xbangunan] > woodKota[pilihKota])
          {
             bisaWood = false;
-            tambahan4 = "Log ";
+            tambahan4 = "Gỗ ";
          }
          if(kebutuhanWorker[xbangunan] > workerKota[pilihKota])
          {
             if(pilihBangun != 2)
             {
                bisaWorker = false;
-               tambahan5 = "Worker ";
+               tambahan5 = "Dân lao động ";
             }
          }
          if(bisaMoney == false || bisaFood == false || bisaIron == false || bisaWood == false || bisaWorker == false)
@@ -7646,7 +7646,7 @@ function klikArea()
                }
             }
             backSalah();
-            cekInfo2(750,"Can\'t upgrade, not enough: " + tambahanKata);
+            cekInfo2(750,"Không thể nâng cấp, còn thiếu: " + tambahanKata);
             pilihBangun = 1;
          }
       };
@@ -7668,29 +7668,29 @@ function klikArea()
       if(kebutuhanMoney[xbangunan] > moneyKota[pilihKota])
       {
          bisaMoney = false;
-         tambahan1 = "Money ";
+         tambahan1 = "Tiền vàng ";
       }
       if(kebutuhanFood[xbangunan] > foodKota[pilihKota])
       {
          bisaFood = false;
-         tambahan2 = "Food ";
+         tambahan2 = "Lương thực ";
       }
       if(kebutuhanIron[xbangunan] > ironKota[pilihKota])
       {
          bisaIron = false;
-         tambahan3 = "Iron ";
+         tambahan3 = "Sắt ";
       }
       if(kebutuhanWood[xbangunan] > woodKota[pilihKota])
       {
          bisaWood = false;
-         tambahan4 = "Log ";
+         tambahan4 = "Gỗ ";
       }
       if(kebutuhanWorker[xbangunan] > workerKota[pilihKota])
       {
          if(pilihBangun != 2)
          {
             bisaWorker = false;
-            tambahan5 = "Worker ";
+            tambahan5 = "Dân lao động ";
          }
       }
       if(bisaMoney == false || bisaFood == false || bisaIron == false || bisaWood == false || bisaWorker == false)
@@ -7702,47 +7702,47 @@ function klikArea()
          if(bisaSungai[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 3)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Farm must be near the water");
+            cekInfo(750,"Không thể xây: Ruộng lúa bắt buộc phải ở gần nguồn nước!");
          }
          else if(bisaSungai[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 13)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Pearl Pond must be near the water");
+            cekInfo(750,"Không thể xây: Hồ ngọc trai bắt buộc phải ở gần nguồn nước!");
          }
          else if(bisaSungai[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 16)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Shrimp Pond must be near the water");
+            cekInfo(750,"Không thể xây: Ao tôm bắt buộc phải ở gần nguồn nước!");
          }
          else if(bisaHutan[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 18)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Coal Mine must be near the forest");
+            cekInfo(750,"Không thể xây: Mỏ than bắt buộc phải ở gần rừng cây!");
          }
          else if(bisaSungai[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 10)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Fish Pond must be near the water");
+            cekInfo(750,"Không thể xây: Hồ cá bắt buộc phải ở gần nguồn nước!");
          }
          else if(bisaHutan[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 5)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Carpenter House must be near the forest");
+            cekInfo(750,"Không thể xây: Xưởng gỗ bắt buộc phải ở gần rừng cây!");
          }
          else if(bisaGunung[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 6)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Iron Mine must be near the mount");
+            cekInfo(750,"Không thể xây: Mỏ sắt bắt buộc phải ở gần vách núi!");
          }
          else if(bisaGunung[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 11)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Gold Mine must be near the mount");
+            cekInfo(750,"Không thể xây: Mỏ vàng bắt buộc phải ở gần vách núi!");
          }
          else if(bisaGunung[pilihKota][pilihMap][pilihArea] == 0 && pilihBangun == 22)
          {
             backSalah();
-            cekInfo(750,"Can\'t build, Steel Mine must be near the mount");
+            cekInfo(750,"Không thể xây: Mỏ thép bắt buộc phải ở gần vách núi!");
          }
          else
          {
@@ -7809,7 +7809,7 @@ function klikArea()
             }
          }
          backSalah();
-         cekInfo(750,"Can\'t build, not enough: " + tambahanKata);
+         cekInfo(750,"Không thể xây dựng, còn thiếu: " + tambahanKata);
          pilihBangun = 1;
       }
       stopDrag();

@@ -102,7 +102,7 @@ function xklikKanan()
    }
 }
 stop();
-indo = "Select your empire:";
+indo = "Hãy chọn đế chế của bạn:";
 back_btn.onRelease = function()
 {
    gotoAndStop("menu");
@@ -124,7 +124,7 @@ select_mc.ok_btn.onRelease = function()
    };
    daerah1.onRelease = function()
    {
-      indo = "Your selected empire";
+      indo = "Đế chế bạn đã chọn";
       jenisKerajaan = 1;
       jenisMusuh = 2;
       xpilihKota = 1;
@@ -143,7 +143,7 @@ select_mc.ok_btn.onRelease = function()
    };
    daerah9.onRelease = function()
    {
-      indo = "Your selected empire";
+      indo = "Đế chế bạn đã chọn";
       jenisKerajaan = 2;
       jenisMusuh = 1;
       xpilihKota = 9;
