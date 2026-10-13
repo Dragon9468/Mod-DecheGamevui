@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/33.1">
+    <id>com.gamevui.theimperium.mod</id>
+    <versionNumber>1.0.0</versionNumber>
+    <filename>TheImperiumMod</filename>
+    <name>Đế Chế GameVui (The Imperium Mod)</name>
+    <description>Bản Mod Đế Chế GameVui Việt Hóa 100% với cơ chế vận tải, di dân và cân bằng chiến thuật</description>
+    <copyright>Mod by Dragon9468</copyright>
+
+    <initialWindow>
+        <content>imperium_modded.swf</content>
+        <visible>true</visible>
+        <aspectRatio>landscape</aspectRatio>
+        <autoOrients>false</autoOrients>
+        <fullScreen>true</fullScreen>
+        <renderMode>cpu</renderMode>
+    </initialWindow>
+
+    <icon>
+        <image48x48>icon.png</image48x48>
+        <image72x72>icon.png</image72x72>
+        <image96x96>icon.png</image96x96>
+        <image144x144>icon.png</image144x144>
+        <image192x192>icon.png</image192x192>
+    </icon>
+
+    <android>
+        <manifestAdditions>
+            <![CDATA[
+            <manifest android:installLocation="auto">
+                <uses-permission android:name="android.permission.INTERNET"/>
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+                <application android:hardwareAccelerated="true" android:allowBackup="true">
+                    <activity android:name="com.adobe.air.AIRAppEntry"
+                              android:configChanges="orientation|keyboardHidden|screenSize"
+                              android:screenOrientation="landscape"
+                              android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+                    </activity>
+                </application>
+            </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
+</application>

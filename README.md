@@ -57,7 +57,29 @@ Bấm phím **`[L]`** hoặc **`[F4]`** bất kỳ lúc nào để mở bảng �
 * `[F1]`: Thêm +50.000 Vàng & Tài nguyên vào thành phố đang chọn.
 * `[F2]`: Thêm +100 tất cả chủng loại quân vào thành phố đang chọn.
 * `[F3]`: Tăng tốc độ ngày (x5 tốc độ phát triển / thu hoạch).
-* `[L]` / `[F4]`: Bật/Tắt bảng điều khiển Logistics & Điều phối Dân số liên vùng.
+* `[L]` / `[F4]`: Bật/Tắt bảng điều khiển Logistics & Điều phối Dân số liên vùng (hoặc bấm nút cảm ứng `[VẬN TẢI (L)]` ở góc phải trên Mobile).
+
+### 6. 🇻🇳 Việt Hóa 100% & Khóa Cứng Màn Hình (Tỷ Lệ 4:3)
+* **Việt hóa toàn diện:** Toàn bộ công trình cấp 1 & cấp 2, tài nguyên, chủng loại lính, thông báo cảnh báo thời chiến, đào ngũ, đói kém, giao diện chiến trường và bảng kết trận đều được dịch sang Tiếng Việt chuẩn.
+* **Khóa cứng tỷ lệ 4:3:** Khắc phục triệt để hiện tượng màn hình 16:9 hoặc độ phân giải cao phóng to làm lệch góc nhìn của game.
+
+---
+
+## 📱 Hướng Dẫn Cài Đặt Cho Mobile (Android)
+
+Game hỗ trợ điều khiển cảm ứng (Point & Click và Kéo - Thả quân đoàn) hoàn hảo trên điện thoại.
+
+### Cách 1: Tải file APK trực tiếp (Không cần xác thực bên thứ 3)
+* **Đóng gói Captive Runtime:** Khi build bằng Adobe AIR với cờ `-target apk-captive-runtime`, file APK đã tích hợp sẵn môi trường chạy mà không yêu cầu máy cài đặt Adobe AIR hay dịch vụ ngoài.
+* **Cài đặt:**
+  1. Tải file `The_Imperium_Mod.apk` về điện thoại.
+  2. Mở file APK và chọn **Cài đặt (Install)**. Nếu điện thoại hỏi quyền "Cài đặt ứng dụng không rõ nguồn gốc", chọn **Cho phép**.
+  3. Mở game và trải nghiệm trực tiếp!
+
+### Cách 2: Chơi nhanh bằng ứng dụng SWF Player (Không cần compile)
+1. Tải ứng dụng **SWF Player** hoặc bất kỳ trình phát Flash nào từ Google Play.
+2. Chép file [`imperium_modded.swf`](imperium_modded.swf) vào điện thoại.
+3. Mở file SWF trong ứng dụng để chơi ngay lập tức.
 
 ---
 
@@ -65,5 +87,7 @@ Bấm phím **`[L]`** hoặc **`[F4]`** bất kỳ lúc nào để mở bảng �
 * **Engine:** ActionScript 2 / Adobe Flash Player Standalone Projector.
 * **Decompiler / Compiler:** JPEXS Free Flash Decompiler (`ffdec.jar`).
 * **Source scripts:** Thư mục [`decompiled_scripts/`](decompiled_scripts/) chứa mã nguồn ActionScript đã mod để đóng gói CI/CD tự động.
-* **Đóng gói Standalone:** Chạy `node build_standalone_exe.js` để tạo file `The_Imperium_Mod.exe` chơi mượt mà không cần Flash Player cài đặt rời.
+* **Đóng gói Standalone PC:** Chạy `node build_standalone_exe.js` để tạo file `The_Imperium_Mod.exe`.
+* **Đóng gói Mobile APK:** Chạy file [`build_apk_android.bat`](build_apk_android.bat) hoặc sử dụng file cấu hình [`app-descriptor.xml`](app-descriptor.xml).
+
 

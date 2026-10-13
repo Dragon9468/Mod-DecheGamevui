@@ -2598,7 +2598,7 @@ function enterMsgBox()
             if(_gVal == undefined) _gVal = 0;
             var _gSign = (_gVal >= 0 ? "+$" : "-$") + Math.abs(_gVal);
             this.judul = namaKota[pilihButton] + " [Trade GDP: " + _gSign + "]";
-            this.isi = "Xuất khẩu hàng ngày: $" + _root.exportGdpKota[pilihButton] + " | Nhập khẩu: $" + _root.importGdpKota[pilihButton] + "\n(Nhấp chuột để di chuyển tới | Nhấn phím 'L' để mở Mạng lưới Vận tải)";
+            this.isi = "Xuất khẩu hàng ngày: $" + _root.exportGdpKota[pilihButton] + " | Nhập khẩu: $" + _root.importGdpKota[pilihButton] + "\n(Nhấp chuột để di chuyển tới | Nhấn nút [Vận tải] hoặc phím 'L')";
             this.jml1 = Number(_root.soldierKota[pilihButton]);
             this.jml2 = Number(_root.horseKota[pilihButton]);
             this.jml3 = Number(_root.catapultKota[pilihButton]);
@@ -2902,6 +2902,32 @@ function buatMap()
    map.map_btn.onRelease = klikMap;
    map.actions_btn.onRelease = klikActions;
    map.options_btn.onRelease = klikOptions;
+   
+   // Nút mở Vận tải & Di dân cảm ứng trên Mobile (dành cho màn hình cảm ứng không có phím 'L')
+   if(map.logistics_mobile_btn == undefined)
+   {
+      var _lBtn = map.createEmptyMovieClip("logistics_mobile_btn", 9999);
+      _lBtn._x = 590;
+      _lBtn._y = 6;
+      _lBtn.lineStyle(1.5, 0x55AAFF, 100);
+      _lBtn.beginFill(0x1B2A42, 90);
+      _lBtn.moveTo(0, 0); _lBtn.lineTo(82, 0); _lBtn.lineTo(82, 24); _lBtn.lineTo(0, 24); _lBtn.lineTo(0, 0);
+      _lBtn.endFill();
+      _lBtn.createTextField("lbl", 1, 0, 2, 82, 22);
+      var _lFmt = new TextFormat();
+      _lFmt.font = "Arial";
+      _lFmt.size = 10;
+      _lFmt.bold = true;
+      _lFmt.align = "center";
+      _lFmt.color = 0x88DDFF;
+      _lBtn.lbl.selectable = false;
+      _lBtn.lbl.setNewTextFormat(_lFmt);
+      _lBtn.lbl.text = "VẬN TẢI (L)";
+      _lBtn.onRelease = function() {
+         _root.openLogisticsManager();
+      };
+   }
+   
    dalam1++;
    cekArea2();
 }
