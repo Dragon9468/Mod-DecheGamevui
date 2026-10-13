@@ -3,4 +3,18 @@ dist/
 .cache/
 *.zip
 ffdec_lib/
-decompiled_scripts/
+as2_dump.txt
+
+# Khong commit file EXE nang vao repo (GitHub Actions tu dong build)
+The_Imperium_Mod.exe
+
+# Thu muc va file cua ffdec tool khong can thiet cho source code mod
+lib/
+flashlib/
+ffdec*
+soleditor*
+translator*
+Icon.icns
+com.jpexs.decompiler.*
+license.txt
+CHANGELOG.md

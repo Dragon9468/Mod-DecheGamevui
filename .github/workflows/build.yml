@@ -1,0 +1,48 @@
+name: Build and Package The Imperium Mod
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Apply Mod logic
+        run: |
+          node apply_battle_mod.js
+          node inject_hotkeys.js
+
+      - name: Compile Modded SWF
+        run: |
+          java -jar ffdec.jar -replace "imperium_original.swf" "imperium_modded.swf" "\frame 130\DoAction" "decompiled_scripts\scripts\frame_130\DoAction.as"
+          java -jar ffdec.jar -replace "imperium_modded.swf" "imperium_modded.swf" "\frame 131\DoAction" "decompiled_scripts\scripts\frame_131\DoAction.as"
+          java -jar ffdec.jar -replace "imperium_modded.swf" "imperium_modded.swf" "\frame 129\DoAction" "decompiled_scripts\scripts\frame_129\DoAction.as"
+
+      - name: Package Standalone Single Executable
+        run: |
+          node build_standalone_exe.js
+
+      - name: Upload Standalone EXE Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: The_Imperium_Standalone_Mod
+          path: The_Imperium_Mod.exe
