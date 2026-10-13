@@ -26,12 +26,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Apply Mod logic
-        run: |
-          node apply_battle_mod.js
-          node inject_hotkeys.js
-
-      - name: Compile Modded SWF
+      - name: Compile Modded SWF from source scripts
         run: |
           java -jar ffdec.jar -replace "imperium_original.swf" "imperium_modded.swf" "\frame 130\DoAction" "decompiled_scripts\scripts\frame_130\DoAction.as"
           java -jar ffdec.jar -replace "imperium_modded.swf" "imperium_modded.swf" "\frame 131\DoAction" "decompiled_scripts\scripts\frame_131\DoAction.as"

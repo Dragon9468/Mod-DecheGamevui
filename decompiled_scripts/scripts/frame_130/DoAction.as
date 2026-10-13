@@ -733,7 +733,14 @@ function masukSoldier2(acak)
    soldier2.gotoAndStop(1);
    soldier2._x = _root["xkotak" + acak]._x;
    soldier2._y = _root["xkotak" + acak]._y;
-   soldier2.nyawa = zjmlMusuh + Math.floor(random(zjmlMusuh / 2));
+   if(_root.citySurvivingTroops[_root.kotaDiserang] != undefined && _root.citySurvivingTroops[_root.kotaDiserang] > 0 && _root.tipeWar == "serang")
+   {
+      soldier2.nyawa = Math.max(1, Math.floor(_root.citySurvivingTroops[_root.kotaDiserang] / 10));
+   }
+   else
+   {
+      soldier2.nyawa = zjmlMusuh + Math.floor(random(zjmlMusuh / 2));
+   }
    indi2++;
    jmlMusuh++;
 }
@@ -1146,22 +1153,31 @@ function cekSelesai(indi)
    end.jagoan4 = xjmlPasukan4 - xjmlSisa4;
    end.jagoan5 = xjmlPasukan5 - xjmlSisa5;
    end.jagoan6 = xjmlPasukan6 - xjmlSisa6;
-   xxjmlSisa2 = 0;
+   var _totalEnemyAlive = 0;
    i = 1;
    while(i <= 10)
    {
-      if(_root["soldier2_mc" + i].nyawa <= 0 || isNaN(_root["soldier2_mc" + i].nyawa) || _root["soldier2_mc" + i].nyawa == undefined)
+      var _eNyawa = _root["soldier2_mc" + i].nyawa;
+      if(_eNyawa != undefined && !isNaN(_eNyawa) && _eNyawa > 0)
       {
-         xxjmlSisa2 = 0;
+         _totalEnemyAlive += Math.floor(_eNyawa);
       }
-      else
-      {
-         xxjmlSisa2 = _root["soldier2_mc" + i].nyawa;
-      }
-      xxjmlSisa2 += Math.floor(_root["soldier2_mc" + i].nyawa);
       i++;
    }
-   end.musuh = Math.floor(xxjmlPasukan2 - xxjmlSisa2);
+   var _actualEnemyLosses = Math.max(0, Math.floor(xxjmlPasukan2 - _totalEnemyAlive));
+   end.musuh = _actualEnemyLosses;
+   
+   if(indi == "menang")
+   {
+      _root.citySurvivingTroops[_root.kotaDiserang] = 0;
+   }
+   else if(indi == "kalah")
+   {
+      if(_root.tipeWar == "serang")
+      {
+         _root.citySurvivingTroops[_root.kotaDiserang] = Math.max(1, _totalEnemyAlive);
+      }
+   }
    if(indi == "menang")
    {
       end.money = (random(5) + 1) * 1500;
