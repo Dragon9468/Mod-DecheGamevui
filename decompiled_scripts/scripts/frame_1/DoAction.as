@@ -1,4 +1,5 @@
 stop();
+System.useCodepage = false;
 Stage.showMenu = false;
 Stage.scaleMode = "showAll";
 Stage.align = "";

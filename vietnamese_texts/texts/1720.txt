@@ -1,5 +1,5 @@
-WELCOME TO
+CHÀO MỪNG ĐẾN
 --- RECORDSEPARATOR ---
-MOVE AREA
+BẢN ĐỒ ĐIỀU CHUYỂN
 --- RECORDSEPARATOR ---
-Select destination area
+Chọn khu vực đích đến

@@ -1,3 +1,1 @@
-Soldiers 
---- RECORDSEPARATOR ---
-per day:
+Binh lính | mỗi ngày:

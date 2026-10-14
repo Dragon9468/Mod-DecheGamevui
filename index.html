@@ -734,6 +734,10 @@
           <p>Tương thích 100% chuột PC và màn hình cảm ứng điện thoại (Android / iOS)</p>
         </div>
         <div class="game-controls-bar">
+          <button class="btn-tool" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5); color: #fca5a5;" onclick="stopAndExitGame()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 17.59 13.41 12z"/></svg>
+            Thoát Game (Về Trang Chủ)
+          </button>
           <button class="btn-tool" onclick="toggleFullscreen()">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
             Toàn Màn Hình
@@ -904,6 +908,16 @@
       const section = document.getElementById('game-view');
       section.scrollIntoView({ behavior: 'smooth' });
       startGameNow();
+    }
+
+    function stopAndExitGame() {
+      const container = document.getElementById('game-container');
+      if (container) container.innerHTML = '';
+      const splash = document.getElementById('game-splash');
+      if (splash) splash.style.display = 'flex';
+      isGameLoaded = false;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      showToast('Đã dừng game và quay lại trang chủ');
     }
 
     function reloadGame() {

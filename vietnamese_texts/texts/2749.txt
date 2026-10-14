@@ -1,5 +1,5 @@
-City map has 4 areas, each with different landscapes that consist of 
+Bản đồ thành phố có 4 khu vực, mỗi vùng có địa hình khác nhau gồm
 --- RECORDSEPARATOR ---
-water, mountains, grass and forest. To explore the 4 areas, just click to 
+sông nước, núi đá, đồng cỏ và rừng cây. Để khám phá 4 khu vực, chỉ cần bấm
 --- RECORDSEPARATOR ---
-go to that area.
+vào góc bản đồ tương ứng.

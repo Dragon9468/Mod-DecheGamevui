@@ -71,9 +71,14 @@ public class EmbedVietnameseFont {
         for (Tag tag : fontTags) {
             if (tag instanceof DefineFont3Tag) {
                 DefineFont3Tag f3 = (DefineFont3Tag) tag;
+                String existing = "";
+                try { existing = f3.getCharacters(); } catch (Exception ignore) {}
                 int added = 0;
                 for (int i = 0; i < VIETNAMESE_CHARS.length(); i++) {
                     char c = VIETNAMESE_CHARS.charAt(i);
+                    if (existing != null && existing.indexOf(c) != -1) {
+                        continue; // Giu nguyen ky tu goc cua game, khong ghi de!
+                    }
                     try {
                         if (f3.addCharacter(c, awtFont)) {
                             added++;
@@ -82,17 +87,19 @@ public class EmbedVietnameseFont {
                         // ignore
                     }
                 }
-                try {
-                    f3.setAdvanceValues(awtFont);
-                } catch (Exception ignore) {}
                 f3.setModified(true);
                 System.out.println("DefineFont3 (id " + f3.getCharacterId() + ", " + f3.getFontName() + "): Da them " + added + " ky tu.");
                 totalAdded += added;
             } else if (tag instanceof DefineFont2Tag) {
                 DefineFont2Tag f2 = (DefineFont2Tag) tag;
+                String existing = "";
+                try { existing = f2.getCharacters(); } catch (Exception ignore) {}
                 int added = 0;
                 for (int i = 0; i < VIETNAMESE_CHARS.length(); i++) {
                     char c = VIETNAMESE_CHARS.charAt(i);
+                    if (existing != null && existing.indexOf(c) != -1) {
+                        continue; // Giu nguyen ky tu goc cua game, khong ghi de!
+                    }
                     try {
                         if (f2.addCharacter(c, awtFont)) {
                             added++;
@@ -101,9 +108,6 @@ public class EmbedVietnameseFont {
                         // ignore
                     }
                 }
-                try {
-                    f2.setAdvanceValues(awtFont);
-                } catch (Exception ignore) {}
                 f2.setModified(true);
                 System.out.println("DefineFont2 (id " + f2.getCharacterId() + ", " + f2.getFontName() + "): Da them " + added + " ky tu.");
                 totalAdded += added;

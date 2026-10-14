@@ -1,3 +1,1 @@
-Elephant
---- RECORDSEPARATOR ---
-per day:
+Voi | mỗi ngày:

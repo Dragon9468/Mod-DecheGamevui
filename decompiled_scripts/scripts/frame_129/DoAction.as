@@ -2540,11 +2540,11 @@ function enterMsgBox()
             {
                if(tingkatSulit == 3 || tingkatSulit == 4)
                {
-                  this.isi = isiButton2[pilihButton] + "\n\nPress here for upgrade or sell the building";
+                  this.isi = isiButton2[pilihButton] + "\n\nNhấn vào đây để nâng cấp hoặc bán công trình";
                }
                else if(tingkatSulit == 1 || tingkatSulit == 2)
                {
-                  this.isi = xisiButton2[pilihButton] + "\n\nPress here for upgrade or sell the building";
+                  this.isi = xisiButton2[pilihButton] + "\n\nNhấn vào đây để nâng cấp hoặc bán công trình";
                }
             }
             else if(tingkatSulit == 3 || tingkatSulit == 4)
