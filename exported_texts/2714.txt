@@ -1,0 +1,3 @@
+Iron Mine: Produce iron. One iron mine requires 25 foods and $20 
+--- RECORDSEPARATOR ---
+wages per day and can produce 5 irons per day.

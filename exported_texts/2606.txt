@@ -1,0 +1,3 @@
+Building Button:
+--- RECORDSEPARATOR ---
+Click and drag to build some building.

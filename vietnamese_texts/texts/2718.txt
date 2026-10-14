@@ -1,0 +1,3 @@
+Pearl Pond: Place for find the pearl in ocean. Produce Pearl, can 
+--- RECORDSEPARATOR ---
+produce 2 pearls per day.

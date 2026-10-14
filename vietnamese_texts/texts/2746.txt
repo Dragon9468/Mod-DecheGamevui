@@ -1,0 +1,3 @@
+Steel Mine: Steel Mine. Produce steel, one steel mine requires 30 
+--- RECORDSEPARATOR ---
+foods and 45 wages per day and can produce 5 steel per day

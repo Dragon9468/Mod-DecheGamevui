@@ -1,0 +1,3 @@
+Market: A place where's residents go to shopping. One market 
+--- RECORDSEPARATOR ---
+requires 50 foods for sell and produce $50 income tax per day.

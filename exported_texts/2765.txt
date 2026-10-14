@@ -1,0 +1,31 @@
+Don't let the amount of your goods become negative, if you see a down arrow sign (decrease) in 
+--- RECORDSEPARATOR ---
+some goods, it shows that your goods are unstable, build some buildings that produce goods or 
+--- RECORDSEPARATOR ---
+import goods.
+--- RECORDSEPARATOR ---
+On Hard and Impossible level, your soldiers (human, horse, catapult, elephant, witch and super 
+--- RECORDSEPARATOR ---
+soldiers) need wages per day, your money will decrease per day if you have lot of soldiers.
+--- RECORDSEPARATOR ---
+If you move soldiers to another city, please check your workers, don't let the number of workers 
+--- RECORDSEPARATOR ---
+become negative, build houses to make the number of workers become positive or go to the 
+--- RECORDSEPARATOR ---
+battle quickly to avoid your soldiers leaving your city.
+--- RECORDSEPARATOR ---
+Collect all of your cities on the border to make the city strong and easier to attack the enemy with 
+--- RECORDSEPARATOR ---
+the maximum number of soldiers.
+--- RECORDSEPARATOR ---
+Don't leave your current city before the city is stable (it's shown by all green up arrow signs - 
+--- RECORDSEPARATOR ---
+increase). If you leave the current city before your city is stable, you may not know the condition 
+--- RECORDSEPARATOR ---
+of the city and your workers may leave your city or your building may be abandoned.
+--- RECORDSEPARATOR ---
+You may not win the battle and only send your soldiers from one city, so use the button MOVE 
+--- RECORDSEPARATOR ---
+RESOURCES to move your soldiers or some goods from one of your other cities before you attack 
+--- RECORDSEPARATOR ---
+the enemy city.

@@ -1,0 +1,3 @@
+Lương thực
+--- RECORDSEPARATOR ---
+per day:

@@ -1,0 +1,5 @@
+Catapult Factory: Produce catapult, one catapult factory requires 
+--- RECORDSEPARATOR ---
+25 foods, 30 logs, 20 irons and $50 wages per day and can 
+--- RECORDSEPARATOR ---
+produce 1 catapult per day

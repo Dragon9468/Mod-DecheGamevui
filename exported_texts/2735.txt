@@ -1,0 +1,3 @@
+Oil Refinary: Place to produce oil, One oil refinery requires 25 
+--- RECORDSEPARATOR ---
+foods and $40 wages per day and can produce 50 oils per day

@@ -1,0 +1,5 @@
+Elephant Stable: Produce Elephant troops, One elephant stable 
+--- RECORDSEPARATOR ---
+requires 40 foods and $30 wages per day and can produce 1 
+--- RECORDSEPARATOR ---
+elephant troop per day.

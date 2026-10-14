@@ -1,0 +1,3 @@
+Gold Mine: Produce gold. One gold mine requires 10 foods and 
+--- RECORDSEPARATOR ---
+$15 wages per day and can produce 100 golds per day.

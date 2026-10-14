@@ -1,0 +1,5 @@
+ACTIONS: To move goods to another city, war expansions, import and export.
+--- RECORDSEPARATOR ---
+MAP: Shows the Dogland Map and controls your other cities.
+--- RECORDSEPARATOR ---
+OPTIONS: Shows game options.

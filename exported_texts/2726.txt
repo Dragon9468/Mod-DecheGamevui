@@ -1,0 +1,3 @@
+Shrimp Pond: Place for shrimp net in ocean. Produce Food, can 
+--- RECORDSEPARATOR ---
+produce 150 foods per day.

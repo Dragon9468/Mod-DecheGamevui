@@ -1,0 +1,5 @@
+City map has 4 areas, each with different landscapes that consist of 
+--- RECORDSEPARATOR ---
+water, mountains, grass and forest. To explore the 4 areas, just click to 
+--- RECORDSEPARATOR ---
+go to that area.

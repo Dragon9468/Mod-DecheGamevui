@@ -1,0 +1,1 @@
+Allows you to import goods from another imperial to meet your city's demand.

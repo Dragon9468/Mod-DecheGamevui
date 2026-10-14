@@ -1,0 +1,5 @@
+Fire Arrow Blacksmith: Produce fire arrow. One blacksmith 
+--- RECORDSEPARATOR ---
+requires 10 foods, 4 logs, 2 irons, 200 oils and $25 wages per day 
+--- RECORDSEPARATOR ---
+and can produce 1 fire arrow set per day

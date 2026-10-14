@@ -1,0 +1,3 @@
+Allows you to move all goods, weapons, money and soldiers to another 
+--- RECORDSEPARATOR ---
+city that you own.

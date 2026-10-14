@@ -1,0 +1,3 @@
+Residence House: One house can be occupied by 50 workers. 
+--- RECORDSEPARATOR ---
+Every house requires 25 foods per day.

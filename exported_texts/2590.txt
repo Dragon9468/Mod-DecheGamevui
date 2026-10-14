@@ -1,0 +1,7 @@
+IMPORTANT NOTES:
+--- RECORDSEPARATOR ---
+If save doesn't work, increase the storage space by 
+--- RECORDSEPARATOR ---
+right clicking mouse, click Settings, tab LOCAL 
+--- RECORDSEPARATOR ---
+STORAGE, then set the bar to right (Unlimited).

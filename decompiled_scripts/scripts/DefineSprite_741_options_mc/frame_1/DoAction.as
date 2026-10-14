@@ -46,15 +46,15 @@ function klikQuality()
    _root.qualityGame = Number(indi.substr(indi.length - 1,1));
    if(_root.qualityGame == 1)
    {
-      _quality = "HIGH";
+      _quality = "BEST";
    }
    else if(_root.qualityGame == 2)
    {
-      _quality = "MEDIUM";
+      _quality = "HIGH";
    }
    else if(_root.qualityGame == 3)
    {
-      _quality = "LOW";
+      _quality = "MEDIUM";
    }
    cekSpeedQuality();
 }

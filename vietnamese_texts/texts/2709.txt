@@ -1,0 +1,3 @@
+To build: Click building, then drag it to building area,
+--- RECORDSEPARATOR ---
+then click again on the building area.

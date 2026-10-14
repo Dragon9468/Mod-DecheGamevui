@@ -1,0 +1,3 @@
+Price per 
+--- RECORDSEPARATOR ---
+goods

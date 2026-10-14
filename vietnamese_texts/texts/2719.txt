@@ -1,0 +1,3 @@
+Spear Blacksmith: One blacksmith requires 10 foods, 10 irons and 
+--- RECORDSEPARATOR ---
+$15 wages per day and can produce 1 spear per day.

@@ -1,0 +1,3 @@
+Barracks: One barracks requires 10 foods and $30 wages and 
+--- RECORDSEPARATOR ---
+can train 2 workers to be 2 soldiers per day.

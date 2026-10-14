@@ -1,0 +1,5 @@
+Jewel Shop: Jewel Shop, sell various of jewel and other 
+--- RECORDSEPARATOR ---
+accesories, one jewel shop requires 20 pearls and can produce 
+--- RECORDSEPARATOR ---
+$1000 income tax per day.

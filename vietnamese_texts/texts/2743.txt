@@ -1,0 +1,5 @@
+Super Soldier Barracks: One super soldier barracks requires 30 
+--- RECORDSEPARATOR ---
+foods, 100 steels and $60 wages and can train 1 super soldier per 
+--- RECORDSEPARATOR ---
+day

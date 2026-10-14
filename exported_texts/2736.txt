@@ -1,0 +1,3 @@
+Coal Mine: Produce coal. One coal mine requires 15 foods and 
+--- RECORDSEPARATOR ---
+$20 wages per day and can produce 3 coals per day.

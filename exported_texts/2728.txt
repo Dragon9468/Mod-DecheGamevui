@@ -1,0 +1,5 @@
+Horse Stable: Produce Horse/Knight, One horse stable requires 30 
+--- RECORDSEPARATOR ---
+foods and $20 wages per day and can produce 2 horses/knights 
+--- RECORDSEPARATOR ---
+per day.

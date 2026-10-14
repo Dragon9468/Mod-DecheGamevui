@@ -1,0 +1,3 @@
+Farm: Produce agriculture pickings, like grist, maize and potato, 
+--- RECORDSEPARATOR ---
+can produce 100 foods per day.

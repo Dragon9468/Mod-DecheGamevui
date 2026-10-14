@@ -1,0 +1,3 @@
+Cow Farm: Cow Farm. Place to process meat, Produce Food, can 
+--- RECORDSEPARATOR ---
+produce 150 foods per day.

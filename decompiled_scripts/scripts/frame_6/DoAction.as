@@ -1730,7 +1730,7 @@ xsound = attachMovie("sound_mc","sound",4);
 xmusic = attachMovie("sound_mc","music",5);
 volum1 = 100;
 volum2 = 75;
-_quality = "HIGH";
+_quality = "BEST";
 speedGame = 1;
 initAwalan();
 simpanSemua = new Array("namaData","day","posSatu","posDua","jenisKerajaan","jenisMusuh","tingkatSulit","xpilihKota","xpilihMap","lawanNyerang","lawanNyerang2","speedGame","sudahTutor");

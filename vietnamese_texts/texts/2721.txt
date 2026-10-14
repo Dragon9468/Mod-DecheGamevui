@@ -1,0 +1,3 @@
+Fish Pond: Place for fish net in ocean. Produce Lương thực, can produce 
+--- RECORDSEPARATOR ---
+125 foods per day.

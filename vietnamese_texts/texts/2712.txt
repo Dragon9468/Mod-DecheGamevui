@@ -1,0 +1,3 @@
+Arrow Blacksmith: One blacksmith requires 10 foods, 4 logs, 2 irons 
+--- RECORDSEPARATOR ---
+and $15 wages per day and can produce 1 arrow set per day.

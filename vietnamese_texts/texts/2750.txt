@@ -1,0 +1,5 @@
+HÀNH ĐỘNG: Chuyển quân, phát động chiến tranh, xuất nhập khẩu.
+--- RECORDSEPARATOR ---
+BẢN ĐỒ: Xem bản đồ Dogland và kiểm soát các thành phố.
+--- RECORDSEPARATOR ---
+CÀI ĐẶT: Mở bảng tùy chọn cấu hình game.

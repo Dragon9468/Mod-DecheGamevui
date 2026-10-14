@@ -1,0 +1,3 @@
+Allows you to attack the enemy's city to take control of the city and 
+--- RECORDSEPARATOR ---
+conquer the imperial.

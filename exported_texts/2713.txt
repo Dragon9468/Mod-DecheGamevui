@@ -1,0 +1,3 @@
+Sword Blacksmith: One blacksmith requires 10 foods, 2 logs, 5 
+--- RECORDSEPARATOR ---
+irons and $15 wages per day and can produce 1 sword per day.

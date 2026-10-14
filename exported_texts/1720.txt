@@ -1,0 +1,5 @@
+WELCOME TO
+--- RECORDSEPARATOR ---
+MOVE AREA
+--- RECORDSEPARATOR ---
+Select destination area
